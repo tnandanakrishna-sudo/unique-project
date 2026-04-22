@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, ans;
+    char operator;
+
+    printf("enter 2 numbers:\n");
+    scanf("%d%d", &num1, &num2);
+
+    printf("enter an arithmetic operator:\n");
+    // Note the space before %c to consume any leftover newline character
+    scanf(" %c", &operator);
+
+    switch(operator)
+    {
+        case '+':
+            ans = num1 + num2;
+            printf("%d + %d = %d\n", num1, num2, ans);
+            break;
+
+        case '-':
+            ans = num1 - num2;
+            printf("%d - %d = %d\n", num1, num2, ans);
+            break;
+
+        case '*':
+            ans = num1 * num2;
+            printf("%d * %d = %d\n", num1, num2, ans);
+            break;
+
+        case '/':
+            ans = num1 /
